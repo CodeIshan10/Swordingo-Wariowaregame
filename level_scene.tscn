@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://qqqwxv7dn47j"]
+
+[ext_resource type="Texture2D" uid="uid://bi2mimtcbehr2" path="res://background.jpg" id="1_386oa"]
+[ext_resource type="Script" uid="uid://c4iurrmogp1a5" path="res://scenes/timer_screen.gd" id="1_a74lg"]
+[ext_resource type="Texture2D" uid="uid://b2wjp4myifsff" path="res://garlic.jpg" id="2_bl4ss"]
+
+[node name="LevelScene" type="Node2D" unique_id=1918131204]
+position = Vector2(0, 15)
+script = ExtResource("1_a74lg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=364752784]
+offset_left = -3.9999995
+offset_top = -19.0
+offset_right = 596.0
+offset_bottom = 341.0
+scale = Vector2(1.9196589, 1.8088064)
+texture = ExtResource("1_386oa")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=674307223]
+offset_left = 200.99998
+offset_top = 83.0
+offset_right = 1967.0
+offset_bottom = 433.0
+scale = Vector2(0.39576715, 0.408175)
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1474219256]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=1664983350]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=397247555]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1286852285]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=261238848]
+layout_mode = 2
+texture = ExtResource("2_bl4ss")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1160456954]
+offset_left = 431.00003
+offset_top = 301.0
+offset_right = 570.85913
+offset_bottom = 366.2732
+scale = Vector2(1.8631176, 1.7952474)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level#"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=83339083]
+offset_left = 478.00003
+offset_top = 462.00003
+offset_right = 540.5139
+offset_bottom = 524.27576
+scale = Vector2(2.4038353, 1.4896182)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"
